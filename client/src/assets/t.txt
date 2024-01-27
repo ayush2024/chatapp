@@ -1,0 +1,13 @@
+<img width="48" height="48" src="https://img.icons8.com/color/48/name--v1.png" alt="name--v1"/>
+
+<img width="48" height="48" src="https://img.icons8.com/color/48/person-male.png" alt="person-male"/>
+
+<img width="100" height="100" src="https://img.icons8.com/matisse/100/user-female-circle.png" alt="user-female-circle"/>
+
+<img width="100" height="100" src="https://img.icons8.com/plasticine/100/person-male.png" alt="person-male"/>
+
+<img width="64" height="64" src="https://img.icons8.com/external-linector-lineal-color-linector/64/external-avatar-man-avatar-linector-lineal-color-linector-2.png" alt="external-avatar-man-avatar-linector-lineal-color-linector-2"/>
+
+<img width="64" height="64" src="https://img.icons8.com/external-xnimrodx-lineal-color-xnimrodx/64/external-avatar-fitness-and-gym-xnimrodx-lineal-color-xnimrodx-3.png" alt="external-avatar-fitness-and-gym-xnimrodx-lineal-color-xnimrodx-3"/>
+
+<img width="100" height="100" src="https://img.icons8.com/carbon-copy/100/000000/person-male.png" alt="person-male"/>
