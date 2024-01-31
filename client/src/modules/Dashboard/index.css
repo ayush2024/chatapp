@@ -1,0 +1,21 @@
+.people-wala{
+    background-color: #725a8a;
+    border-radius: 20px;
+    padding: 30px;
+    font-size: 2rem;
+    color: #f5f5f5;
+}
+
+.message-wala{
+    color: #f5f5f5;
+    font-size: 2rem;
+
+}
+
+.top-heading{
+    font-size: 3rem;
+    margin-top: 3px;
+    color: #725a8a;
+    font-family: sans-serif;
+    
+}

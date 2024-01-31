@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react'
 // import Avtar from '../../assets/Avtar'
 import Input from '../../components/Input'
 import { io } from 'socket.io-client';
-
+import './index.css'
 const Dashboard = () => {
 
 
@@ -129,15 +129,15 @@ const Dashboard = () => {
                         <img width="75" height="75" src="https://img.icons8.com/color/48/circled-user-male-skin-type-3--v1.png" alt="circled-user-male-skin-type-3--v1" />
                     </div>
                     <div className=' ml-8'>
-                        <h3 className='text-2xl'>{user?.fullName}</h3>
-                        <p className=' text-lg font-light'>{user?.email}</p>
+                        <h2 className='text-4xl text-[#f5f5f5]'>{user?.fullName}</h2>
+                        <p className=' text-lg text-[#f5f5f5] '>{user?.email}</p>
                     </div>
                 </div>
 
                 <hr />
 
                 <div className=' mx-14 mt-10'>
-                    <div className=' text-primary text-lg'>Messages</div>
+                    <div className=' message-wala'>Messages</div>
                     <div>
                         {
                             convo.length > 0 ?
@@ -149,8 +149,8 @@ const Dashboard = () => {
                                                     <img width="48" height="48" src="https://img.icons8.com/color/48/circled-user-female-skin-type-1-2--v1.png" alt="circled-user-female-skin-type-1-2--v1" />
                                                 </div>
                                                 <div className=' ml-8'>
-                                                    <h3 className='text-lg'>{user?.fullName}</h3>
-                                                    <p className=' text-sm font-light'>{user?.email}</p>
+                                                    <h3 className='text-lg text-[#f5f5f5]'>{user?.fullName}</h3>
+                                                    <p className=' text-sm font-light text-[#f5f5f5]'>{user?.email}</p>
                                                 </div>
                                             </div>
                                         </div>
@@ -161,22 +161,24 @@ const Dashboard = () => {
                 </div>
             </div>
             <div className=' w-[50%] h-screen bg-[#fff] flex flex-col items-center'>
+            <h2 className='top-heading'>Chat App</h2>
                 {
                     messages?.receiver?.fullName &&
-                    <div className=' w-[75%] bg-secondary h-[80px] mt-14 rounded-full flex items-center px-14'>
+                    <div className=' w-[75%] bg-secondary h-[65px] mt-4 rounded-full flex items-center px-14'>
                         <div className=' cursor-pointer'>
                             <img width="48" height="48" src="https://img.icons8.com/color/48/circled-user-female-skin-type-1-2--v1.png" alt="circled-user-female-skin-type-1-2--v1" />
                         </div>
                         <div className=' ml-6 mr-auto'>
-                            <h3 className='text-lg'>{messages?.receiver?.fullName}</h3>
-                            <p className=' text-sm font-light'>{messages?.receiver?.email}</p>
+                            <h3 className='text-lg text-[#f5f5f5]'>{messages?.receiver?.fullName}</h3>
+                            <p className=' text-sm text-[#f5f5f5]'>{messages?.receiver?.email}</p>
                         </div>
                         <div className=' cursor-pointer'>
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-phone-outgoing" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" /><path d="M15 9l5 -5" /><path d="M16 4l4 0l0 4" /></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" className="text-[#f5f5f5] icon icon-tabler icon-tabler-phone-outgoing" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none" /><path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" /><path d="M15 9l5 -5" /><path d="M16 4l4 0l0 4" /></svg>
                         </div>
                     </div>
                 }
                 <div className='h-[75%] w-full overflow-scroll shadow-sm'>
+                    
                     <div className='p-14'>
                         {
                             messages?.messages?.length > 0 ?
@@ -231,8 +233,8 @@ const Dashboard = () => {
 
                 </div>
             </div>
-            <div className=' w-[25%] h-screen bg-light px-8 py-16 overflow-scroll'>
-                <div className=' text-primary text-lg'>People
+            <div className=' w-[25%] h-screen bg-dark px-10 py-16  overflow-scroll'>
+                <div className=' people-wala'>People
                     <div>
                         {
                             users.length > 0 ?
